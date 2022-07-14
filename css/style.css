@@ -1,0 +1,342 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+body {
+    font-family: 'Noto Sans KR', 'dodum', Verdana, Tahoma, sans-serif;
+    color: #111;
+    font-size: 12px;
+}
+
+.mobile {
+    display: none;
+}
+img {
+    max-width: 100%;
+}
+
+
+/* header */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4.2vw;
+    min-height: 80px;
+    border-bottom: 1px solid #d8d8d8;
+    z-index: 100;
+}
+.header_in {
+    /* max-width: 1920px; */
+    margin: auto;
+    height: 100%;
+    border: 1px solid yellow;
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 5.2vw;
+    width: 172px;
+    height: 100%;
+    border: 1px solid blue;
+}
+header h1 a {
+    display: inline-block;
+    width: 172px;
+    height: 100%;
+    background: url(../images/toplogo_w.png) no-repeat center center / contain;
+    text-indent: -9999px;
+}
+
+.gnb_wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+.gnb_list_wrap {
+    height: 100%;
+}
+.gnb_list {
+    display: table;
+    height: 100%;
+    padding-right: 2vw;
+}
+.gnb_list > li {
+    display: table-cell;
+    height: 100%;
+    padding: 0 1.95vw;
+    position: relative;
+}
+.m_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.83vw;
+    height: 100%;
+    line-height: 100%;
+    color: #fff;
+}
+
+.subItem_wrap {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border-top: 1px solid #d8d8d8;
+    box-shadow: 0px 10px 30px rgba(0 0 0 / 0.2);
+}
+.subItem_List {}
+.subItem {}
+
+.national_list {
+    height: 101%;
+    width: 11%;
+}
+a.nat_target {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background: #334A51;
+}
+.nat_target_in {
+    font-size: 0.83vw;
+    font-family: 'Merriweather', serif;
+    color: #fff;
+}
+
+.totalMenu_wrap {
+    height: 101%;
+    width: 11%;
+}
+a.btn_total {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    padding-left: 50%;
+}
+.btn_total::before, .btn_total::after {
+    position: absolute;
+    content: "";
+    width: 27%;
+    height: 1px;
+    left: 12%;
+    top: 50%;
+    background-color: #111;
+}
+.btn_total::before {
+    transform: translateY(-7px);
+}
+.btn_total::after {
+    transform: translateY(7px);
+}
+.btn_total_in {
+    font-size: 0.83vw;
+    font-family: 'Merriweather', serif;
+    color: #111;
+}
+
+/* total_menu_z */
+.total_menu_z {}
+
+
+/*************** #fullpage ***************/
+
+.s2 {
+    position: relative;
+    background: #EBE7E4; 
+    min-height:475px;
+}
+.s2_bg {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #95aaa3;
+}
+.s2_img {
+    position: absolute;
+    top: 0;
+    right: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 25%;
+}
+
+.s2_w {
+    position: relative;
+    margin: 100px 12vw;
+    z-index: 5;
+}
+.s2_in {
+}
+.s2_title_w {}
+.s2_title {
+    max-width: 45%;
+}
+.s2_title_sub {
+    font-size: 1.7vw;
+    color: #3c4940;
+    font-weight: 700;
+    margin-top: 26px;
+}
+
+.s2_cont {
+    margin-top: 70px;
+}
+.s2_item_title {
+    font-size: 1vw;
+    color: #3c4940;
+    font-weight: 500;
+}
+.s2_item_cont {
+    font-size: 0.85vw;
+    margin-top: 40px;
+    line-height: 1.5;
+    word-break: keep-all;
+}
+
+.s2_list {
+    display: table;
+    text-align: left;
+}
+.s2_list > li {
+    display: table-cell;
+    padding-right: 100px;
+    vertical-align: top;
+}
+
+.s2_item {
+    text-align:center; 
+}
+.s2_item::before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: url(../images/mc_eff_m.png) no-repeat 0 0 /cover;
+}
+.s2_item p {
+    margin-top: 25px;
+    text-align: left;
+    display: inline-block;
+}
+
+.s2_item01::before {background-position: 0 0;}
+.s2_item02::before {background-position: 0 -90px;}
+.s2_item03::before {background-position: 0 -180px;}
+.s2_item04::before {background-position: 0 -270px;}
+
+.s2_more {
+    padding-top: 50px;
+}
+.s2_more a {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    color: #3c4940;
+    font-weight: 500;
+    line-height: 54px;
+    padding-right: 67px;
+}
+.s2_more a::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 54px;
+    height: 54px;
+    background: #D5D5D5 url(../images/linkgo_allow.png) no-repeat 50% 50%;
+    border-radius: 50%;
+}
+
+
+.s3 {
+    position: relative;
+    background: url(../images/mc_geda_bg_pc.png) no-repeat 50% 50% / cover;
+    z-index: 3;
+}
+
+.s3_w {
+    margin: 100px 12vw;
+    color: #fff;
+}
+.s3_title {
+    font-size: 1.7vw;
+    font-weight: 700;
+}
+.s3_main {
+    font-size: 4.8vw;
+    font-weight: 700;
+    font-family: 'Merriweather', serif;
+    line-height: 1.25;
+    letter-spacing: -1.8px;
+    margin-top: 30px;
+}
+
+.s3_sub_w {}
+.s3_sub {
+    margin-top: 40px;
+    line-height: 1.5;
+}
+.s3_item_cont {
+    font-size: 0.95vw;
+}
+.s3_item_cont.type2 {}
+.s3_item_title {
+    font-size: 1.3vw;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+}
+
+.s3_btn_w {
+    margin-top: 100px;
+}
+a.s3_btn {
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #fff;
+    padding: 13px 23px;
+    border-radius: 100px;
+}
+.s3_btn span {
+    position: relative;
+    display: block;
+    font-size: 0.95vw;
+    color: #fff;
+    padding-right: 40px;
+}
+.s3_btn span::before, .s3_btn span::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 0;
+}
+.s3_btn span::before {
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+}
+.s3_btn span::after {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    border-left: 0;
+    transform: rotate(45deg) translateY(calc(-50% - 1px));
+    right: 5px;
+}
