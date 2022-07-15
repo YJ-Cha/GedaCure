@@ -80,6 +80,29 @@
 }
 
 @media (max-width: 1679px) {
+
+    a.totalSubItem {
+        font-size: 1.5vw;
+    }
+
+    .total_adress_w {
+        bottom: 40px;
+    }
+    .total_adress_w h2 {
+        font-size: 1.1vw;
+    }
+    .total_adress_list > li {
+        font-size: 1vw;
+    }
+
+    .totalClose_w {
+        height:55px;
+        width: 20%;
+        min-height: auto;
+    }  
+
+    
+
     .s2_bg {
         width: 20%;
     }
@@ -170,6 +193,106 @@
         margin-left: -15px;
     }
 
+    /* total_menu_z */
+
+    .total_menu_z_in {
+        background-size: 80% auto;
+    }
+    .total_menu_z_in h1 {
+        display: flex;
+        margin-left: 30px;
+        height: 55px;
+        align-items: center;
+        width: 172px;
+    }
+    .total_menu_z_in h1 a {
+        display: inline-block;
+        width: 90px;
+        height: 100%;
+        background: url(../images/toplogo_w.png) no-repeat center center / contain;
+        text-indent: -9999px;
+    }
+
+    .total_menu {
+        width: 100%;
+        position: absolute;
+        top: 55px;
+        height: calc(100% - 160px);
+        overflow: hidden;
+        /* overflow-y: auto; - iscroll 사용 안 할때 자체 스크롤 */
+    }
+    ul.total_list {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto;
+        padding-top: 70px;
+    }
+    .total_list > li {
+        display: block;
+        position: static; /*태그의 흐름에 따라 위치, 위치값 안먹힘*/ 
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .totalSubItem_wrap {
+        padding-top: 0px;
+        display: none;
+    }
+    a.totalM_item {
+        font-size: 24px;
+    }
+    .totalM_item.active {
+        border-bottom: 2px solid #fff;
+    }
+    .totalM_item.active + .totalSubItem_wrap {
+        display: block;
+    }
+
+    ul.totalSubItem_List {
+        padding-top: 25px;
+    }
+    a.totalSubItem {
+        font-size: 16px;
+    }
+
+    .total_adress_w {
+        bottom: 10px;
+        text-align: center;
+    }
+
+    .total_adress_w h2 {
+        font-size: 18px;
+    }
+    .total_adress_list {
+        display: block;
+    }
+    .total_adress_list > li {
+        display: block;
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: center;
+        padding-right: 0px;
+    }
+    li.adress {
+        display: none;
+    }
+    .totalClose_w {
+        height:55px;
+        width: 20%;
+        min-height:auto;
+        background:#fff;
+    }
+    a.btn_totalClose {
+        padding-left: 0px;
+    }
+    a.btn_totalClose:before, a.btn_totalClose:after {
+        background-color: #111;
+        left: 50%;
+    }
+
+    .btn_totalClose_in {
+        display: none;
+    }
 
     /* section */
 
